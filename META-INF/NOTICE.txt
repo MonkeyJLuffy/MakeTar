@@ -1,0 +1,8 @@
+MakeTar
+
+This product includes software developed at
+The Apache Software Foundation (http://www.apache.org/).
+
+The files in the package com.tar use the apache commons compress library 1.8
+http://commons.apache.org/proper/commons-compress/
+
