@@ -69,6 +69,7 @@ public class TarArchive {
 
         if(f.isFile())
         {
+        	tarEntry.setModTime(0);
             tOut.putArchiveEntry(tarEntry);
             IOUtils.copy(new FileInputStream(f), tOut);
 
@@ -76,7 +77,6 @@ public class TarArchive {
         }
         else
         {
-//            tOut.closeArchiveEntry();
 
             File[] children = f.listFiles();
             Arrays.sort(children);
